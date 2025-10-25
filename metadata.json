@@ -1,0 +1,5 @@
+{
+  "name": "AI Quote Card",
+  "description": "A web application to create beautiful and shareable quote cards. Users can provide a topic, and the app uses AI to generate a unique quote. It allows customization of fonts, colors, and a user signature image, and the final card can be downloaded as a high-resolution PNG.",
+  "requestFramePermissions": []
+}

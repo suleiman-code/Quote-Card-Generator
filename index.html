@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Quote Card Generator</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Montserrat&family=Open+Sans&family=Oswald&family=Playfair+Display&family=Roboto&family=Tiro+Gurmukhi&display=swap" rel="stylesheet">
+    
+    <script>
+        // Custom Tailwind theme to add font families
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'open-sans': ['"Open Sans"', 'sans-serif'],
+                        'lato': ['Lato', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'oswald': ['Oswald', 'sans-serif'],
+                        'playfair-display': ['"Playfair Display"', 'serif'],
+                        'merriweather': ['Merriweather', 'serif'],
+                        'tiro-gurmukhi': ['"Tiro Gurmukhi"', 'serif'],
+                        'raavi': ['Raavi', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* CSS for contentEditable placeholder */
+        [contenteditable]:empty:before {
+            content: attr(data-placeholder);
+            color: #94a3b8; /* slate-400 */
+            pointer-events: none;
+            display: block; /* For cursor positioning */
+        }
+    </style>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+        "html-to-image": "https://aistudiocdn.com/html-to-image@^1.11.13"
+      }
+    }
+    </script>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
